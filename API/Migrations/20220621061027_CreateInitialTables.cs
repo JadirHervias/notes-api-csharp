@@ -50,8 +50,8 @@ namespace API.Migrations
                 columns: new[] { "Id", "Email", "FullName", "Password", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("839825b0-017b-4d68-9d66-d270f9c5167d"), "john_doe@gmail.com", "John Doe", "$2y$10$NP.PLhBrErGtsj4fDX6DAOqEkBfMksZ1IN1G3T5zFYZQ5CZtZiTMO", "john123" },
-                    { new Guid("d5b5d210-bb70-4368-a7ab-a2c85d42dd9b"), "johancruyff_47@gmail.com", "Johan Cruyff", "$2y$10$NP.PLhBrErGtsj4fDX6DAOqEkBfMksZ1IN1G3T5zFYZQ5CZtZiTMO", "johanCF" }
+                    { new Guid("21447479-b280-481d-ac00-22ec5914ed20"), "johancruyff_47@gmail.com", "Johan Cruyff", "AQAAAAEAACcQAAAAEBHySPor5SHQGHomzXOtc2/qHdkS8NsOyUCgXv2vpcHvhE9vqxapNN58amAkOtNaBg==", "johanCF" },
+                    { new Guid("90db8c39-ca6e-4293-970b-8ad543e02a6a"), "john_doe@gmail.com", "John Doe", "AQAAAAEAACcQAAAAEBHySPor5SHQGHomzXOtc2/qHdkS8NsOyUCgXv2vpcHvhE9vqxapNN58amAkOtNaBg==", "john123" }
                 });
 
             migrationBuilder.CreateIndex(

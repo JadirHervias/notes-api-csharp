@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Migrations
 {
     [DbContext(typeof(NotesAPIContext))]
-    [Migration("20220621031031_CreateInitialTables")]
+    [Migration("20220621061027_CreateInitialTables")]
     partial class CreateInitialTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,18 +87,18 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("839825b0-017b-4d68-9d66-d270f9c5167d"),
+                            Id = new Guid("90db8c39-ca6e-4293-970b-8ad543e02a6a"),
                             Email = "john_doe@gmail.com",
                             FullName = "John Doe",
-                            Password = "$2y$10$NP.PLhBrErGtsj4fDX6DAOqEkBfMksZ1IN1G3T5zFYZQ5CZtZiTMO",
+                            Password = "AQAAAAEAACcQAAAAEBHySPor5SHQGHomzXOtc2/qHdkS8NsOyUCgXv2vpcHvhE9vqxapNN58amAkOtNaBg==",
                             UserName = "john123"
                         },
                         new
                         {
-                            Id = new Guid("d5b5d210-bb70-4368-a7ab-a2c85d42dd9b"),
+                            Id = new Guid("21447479-b280-481d-ac00-22ec5914ed20"),
                             Email = "johancruyff_47@gmail.com",
                             FullName = "Johan Cruyff",
-                            Password = "$2y$10$NP.PLhBrErGtsj4fDX6DAOqEkBfMksZ1IN1G3T5zFYZQ5CZtZiTMO",
+                            Password = "AQAAAAEAACcQAAAAEBHySPor5SHQGHomzXOtc2/qHdkS8NsOyUCgXv2vpcHvhE9vqxapNN58amAkOtNaBg==",
                             UserName = "johanCF"
                         });
                 });
