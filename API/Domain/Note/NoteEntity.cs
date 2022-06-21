@@ -53,11 +53,11 @@ public class NoteEntity : ISerializable
                 ? Enum.Parse<NotePriority>(notePrimitives.Priority.ToString())
                 : NotePriority.MEDIUM,
             Guid.Parse(notePrimitives.UserId),
-            SummarizeContext(notePrimitives.Content)
-        ); ;
+            SummarizeContent(notePrimitives.Content)
+        );
     }
 
-    public static string? SummarizeContext(string? content)
+    public static string? SummarizeContent(string? content)
     {
         return null != content
                ? $"{content?[0..Math.Min(content.Length, 22)].Trim()}..."
@@ -71,7 +71,7 @@ public class NoteEntity : ISerializable
         info.AddValue("content", Content);
         info.AddValue("priority", Priority);
         info.AddValue("user_id", UserId);
-        info.AddValue("summary", SummarizeContext(Content));
+        info.AddValue("summary", SummarizeContent(Content));
     }
 }
 
