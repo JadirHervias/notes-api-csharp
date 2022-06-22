@@ -8,7 +8,7 @@ password: 12345678
 
 Login:
 
-```json
+```jsonc
 POST /api/auth/login
 
 Request body:
@@ -39,7 +39,7 @@ GET /api/note/[note_id]
 
 Create note (require JWT):
 
-```json
+```jsonc
 POST /api/note
 
 Request body:
@@ -54,7 +54,7 @@ Request body:
 
 Update note (require JWT):
 
-```json
+```jsonc
 PUT /api/note/[note_id]
 
 Request body:
